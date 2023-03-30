@@ -1,15 +1,22 @@
+#!bash
+###### Change according to your experiment design
+n_process=8
+PY=python3.7
+algos="MSAEA BO cBO MAMPSO DRNESO DREM"
+seeds="1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21"
+vars="3 5 8 10"
+problems="Rastrigin Ackley Griewank"
+######
+
 export MKL_NUM_THREADS=1
 export NUMEXPR_NUM_THREADS=1
 export OMP_NUM_THREADS=1
-
-n_process=8
-PY=python3.7
 
 pids=()
 p=1
 active_proc=0
 
-RUNNAME=vmware-vmx
+RUNNAME=python
 rm -rf ./$RUNNAME
 ln -s `which $PY` ./$RUNNAME
 
@@ -40,15 +47,7 @@ wait_empty_processor(){
   done
 }
 
-#algos="MMSAEA BO MSAEA MAMPSO DRNESO DREM WMMSAEA"
-#seeds="1 2 3 4 5"
-#vars="3 5 8 10"
-#problems="Rastrigin Ackley Griewank Schwefel"
 
-algos="MMSAEA BO MSAEA MAMPSO DRNESO DREM WMMSAEA"
-seeds="1 2 3"
-vars="5"
-problems="Rastrigin Ackley Griewank Schwefel"
 
 for s in $seeds
 do
