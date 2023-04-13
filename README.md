@@ -1,7 +1,7 @@
 # Multi-output Surrogate Assisted Evolutionary Algorithm for Expensive Multi-Modal Optimization Problems 
 
  [Renzhi Chen]()\* [Ke Li]()\*,
-[[Paper]](https://github.com/RenzhiChen/MSAEA/blob/main/doc/main.pdf) [[Supplementary]](https://github.com/RenzhiChen/MSAEA/blob/main/doc/supplemental.pdf)
+[[Paper]](https://raw.githubusercontent.com/RenzhiChen/MSAEA/main/doc/main.pdf) [[Supplementary]](https://raw.githubusercontent.com/RenzhiChen/MSAEA/main/doc/supplemental.pdf)
 
 ## Overview
 
